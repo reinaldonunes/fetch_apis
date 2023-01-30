@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      .cep{
+        padding:10px 24px;
+        border:1px solid #ddd;
+        font-size:1rem;
+        border-radius:6px;
+      }
+      button{
+        padding:10px 24px;
+        margin:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      CÓDIGO DO LEO
+      <br />
+      <div>
+        <input type="text" class="cep" id="input-search" placeholder="Informe o CEP" />
+        <button type="button" id="search">Procurar</button>
+      </div>
+      <br />
+      <span id="cep_result_leo"></span>
+
+
+
+      <br /><br /><br />
+
+      FETCH COM THEN
+      <br />
+      <div>
+        <input type="text" class="cep" id="input-search_2" placeholder="Informe o CEP" />
+        <button type="button" id="search2">Procurar</button>
+      </div>
+      <br />
+      <span id="cep_result_fetch"></span>
+
+
+
+
+
+      <br /><br /><br />
+      ASYNC AWAIT + TRY CATCH
+      <br />
+      <div>
+        <input type="text" class="cep" id="cep" placeholder="Informe o CEP" />
+        <button type="button" id="submitCep">Procurar</button>
+      </div>
+      <br />
+      <span id="cep_result"></span>
+
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
